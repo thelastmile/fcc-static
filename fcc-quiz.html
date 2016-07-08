@@ -1,0 +1,41 @@
+<style>
+  .challenge-container {
+  border: 1px solid black;
+  padding: 1em;
+  width: 400px;
+  }
+
+  .challenge-container .title {
+  color: red;
+  font-size: 120%
+  }
+
+  .challenge-container code {
+  background-color: yellow;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 2px;
+  }
+
+  .input-area textarea {
+  width: 350px;
+  height: 400px;
+  }
+</style>
+
+<template id="challenge-template">
+  <div class="challenge-container">
+    <div class="title"></div>
+    <div class="description"></div>
+    <div class="input-area">
+      <textarea>
+      </textarea>
+    </div>
+    <input type="button" value="Run Tests"></input>
+    <div class="test-iframe"></div>
+    <div class="test-result"></div>
+  </div>
+</template>
+
+<div id="content"></div>
+<script src="fcc-quiz.js"></script>
